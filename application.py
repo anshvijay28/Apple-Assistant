@@ -8,14 +8,14 @@ from openai_image import get_description, generate_image, send_image
 
 # import donenv for keeping passwords/API keys out of source code
 
-app = Flask(__name__)
+application = Flask(__name__)
 
-@app.route("/")
+@application.route("/")
 def hello():
     return "Hello, World!"
 
 
-@app.route("/sms", methods=['GET', 'POST'])
+@application.route("/sms", methods=['GET', 'POST'])
 def send_sms():
 
     body = request.values.get('Body', None)
@@ -45,5 +45,5 @@ def send_sms():
 
 
 if __name__ == "__main__":
-  app.run(debug=True)
+  application.run(debug=True)
 
