@@ -1,6 +1,7 @@
 import mimetypes
 from flask import Flask, Response, request
 from twilio.twiml.messaging_response import MessagingResponse
+
 from construct_message import get_body
 from twilio_balance import get_balance
 from getting_quote import get_quote
@@ -45,5 +46,5 @@ def send_sms():
 
 
 if __name__ == "__main__":
-  application.run(debug=True)
+  application.run(port=8000, debug=True)
 
