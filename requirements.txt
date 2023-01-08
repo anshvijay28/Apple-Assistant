@@ -14,3 +14,4 @@ twilio==7.16.0
 urllib3==1.26.13
 Werkzeug==2.2.2
 zipp==3.11.0
+openai==0.25.0
