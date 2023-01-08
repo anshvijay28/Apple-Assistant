@@ -13,3 +13,11 @@
 	4) Scroll down and find the Webhook for "A MESSAGE COMES IN"
 	5) Paste url and add "/sms"
 	6) Save
+
+
+
+
+
+
+
+Use this video if you every forget the git commands: https://www.youtube.com/watch?v=4tDjVFbi31o&ab_channel=CalebCurry
