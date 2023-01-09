@@ -120,9 +120,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-encryption.py
-send_SMS.py
-testing.py
+encryption.json
 ngrok
 .DS_Store
 ideas.txt
