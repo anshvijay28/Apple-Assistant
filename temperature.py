@@ -3,10 +3,10 @@ import json
 import math
 import datetime 
 from datetime import date
-from keys import get_keys
+import variables
 
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
-API_KEY = get_keys()['openweathermap_api_key']
+API_KEY = variables.openweathermap_api_key
 CITY = "Atlanta"
 
 URL = BASE_URL + "appid=" + API_KEY + "&q=" + CITY

@@ -1,8 +1,8 @@
 from twilio.rest import Client
-from keys import get_keys
+import variables
 
-account_sid = get_keys()['twilio_account_sid']
-auth_token = get_keys()['twilio_auth_token']
+account_sid = variables.twilio_account_sid 
+auth_token = variables.twilio_auth_token
 
 client = Client(account_sid, auth_token)
 
@@ -14,4 +14,3 @@ def get_balance():
 
 	message = f'Your account has {balance:}{currency} left.'
 	return message
-print(get_balance())

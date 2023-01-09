@@ -1,7 +1,8 @@
 import openai
-from keys import get_keys
+import variables
 
-openai.api_key = get_keys()['openai_api_key']
+openai.api_key = variables.openai_api_key
+
 def get_quote():
   response = openai.Completion.create(
     model="text-davinci-003",
@@ -16,5 +17,8 @@ def get_quote():
 
   text = response['choices'][0]['text']
   return text
+
+
+
 
 
