@@ -6,7 +6,7 @@ from datetime import date
 import variables
 
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
-API_KEY = variables.openweathermap_api_key
+API_KEY = str(variables.openweathermap_api_key)
 CITY = "Atlanta"
 
 URL = BASE_URL + "appid=" + API_KEY + "&q=" + CITY
