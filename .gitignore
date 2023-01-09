@@ -121,7 +121,6 @@ celerybeat.pid
 
 # Environments
 send_SMS.py
-encryption.json
 instructions.txt
 testing.py
 ngrok
