@@ -14,4 +14,4 @@ def get_balance():
 
 	message = f'Your account has {balance:}{currency} left.'
 	return message
-#print(message)
+print(get_balance())
