@@ -120,6 +120,8 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+keys.py
+encryption.json
 send_SMS.py
 instructions.txt
 testing.py

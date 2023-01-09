@@ -40,6 +40,13 @@ time_of_sunset = sunset(sunset_datetime)
 rain = (data['weather'][0]['main'] == 'Rain')
 
 
+print(API_KEY)
+print(type(API_KEY))
+print(len(URL))
+print(len(URL.strip()))
+print(URL == URL.strip())
+print(data['main'])
+
 
 
 
