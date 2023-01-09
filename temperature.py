@@ -3,10 +3,11 @@ import json
 import math
 import datetime 
 from datetime import date
+from keys import get_keys
 
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
-API_KEY = "0ef590a8bb63f793f9ef1d632f6d0127"
-CITY = "Irvine"
+API_KEY = get_keys()['openweathermap_api_key']
+CITY = "Atlanta"
 
 URL = BASE_URL + "appid=" + API_KEY + "&q=" + CITY
 response = requests.get(URL)
@@ -14,6 +15,7 @@ response = requests.get(URL)
 def fahrenheit(kelvin):
 	f = 1.8 * (kelvin - 273) + 32
 	return math.ceil(f * 100) / 100
+
 def sunset(time):
 	time = str(time)
 	l1 = time.split()
@@ -22,7 +24,6 @@ def sunset(time):
 	hour -= 15
 	hour = str(hour)
 	return hour + ':' + l2[1] + ':' + l2[2] + 'PM'
-
 
 data = response.json()
 

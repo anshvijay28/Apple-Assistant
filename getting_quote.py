@@ -1,7 +1,7 @@
 import openai
+from keys import get_keys
 
-# openai.api_key = os.getenv("OPENAI_API_KEY")
-openai.api_key = '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'
+openai.api_key = get_keys()['openai_api_key']
 def get_quote():
   response = openai.Completion.create(
     model="text-davinci-003",
@@ -16,4 +16,5 @@ def get_quote():
 
   text = response['choices'][0]['text']
   return text
-#print(text)
+
+

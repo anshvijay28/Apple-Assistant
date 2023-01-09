@@ -1,7 +1,8 @@
 from twilio.rest import Client
+from keys import get_keys
 
-account_sid = 'AC305c3aed3f154982ae4d14a80c088ea4'
-auth_token = '1d905e3916217418b8573c1614658621'
+account_sid = get_keys()['twilio_account_sid']
+auth_token = get_keys()['twilio_auth_token']
 
 client = Client(account_sid, auth_token)
 

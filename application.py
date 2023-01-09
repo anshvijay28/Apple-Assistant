@@ -35,7 +35,6 @@ def send_sms():
       description = get_description(body)
       image_url = generate_image(description)
       send_image("+19496367416", image_url)
-      # send_image(generate_image(get_description(body)))
     elif (body == "balance"):
       resp.message(get_balance())
     else:
