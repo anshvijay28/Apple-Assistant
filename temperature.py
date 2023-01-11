@@ -4,9 +4,11 @@ import math
 import datetime 
 from datetime import date
 import variables
+import os 
 
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
-API_KEY = str(variables.openweathermap_api_key)
+# API_KEY = str(variables.openweathermap_api_key)
+API_KEY = os.environ['openweathermapApiKey']
 CITY = "Atlanta"
 
 URL = BASE_URL + "appid=" + API_KEY + "&q=" + CITY
