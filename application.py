@@ -33,12 +33,11 @@ def send_sms():
       description = get_description(body)
       image_url = generate_image(description)
       send_image(variables.number_to, image_url)
-    else:
-      resp.message("Please type a valid command.")
-    """
     elif (body == "balance"):
       resp.message(get_balance())
-    """
+    else:
+      resp.message("Please type a valid command.")
+ 
     
 
     return Response(str(resp), mimetype="application/xml")
