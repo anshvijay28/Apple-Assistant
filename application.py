@@ -3,11 +3,9 @@ import variables
 from flask import Flask, Response, request
 from twilio.twiml.messaging_response import MessagingResponse
 from construct_message import get_body
-from twilio_balance import get_balance
+# from twilio_balance import get_balance
 from getting_quote import get_quote
 from openai_image import get_description, generate_image, send_image
-
-# import donenv for keeping passwords/API keys out of source code
 
 application = Flask(__name__)
 
@@ -36,8 +34,10 @@ def send_sms():
       description = get_description(body)
       image_url = generate_image(description)
       send_image(variables.number_to, image_url)
+    """
     elif (body == "balance"):
       resp.message(get_balance())
+    """
     else:
       resp.message("Please type a valid command.")
 
