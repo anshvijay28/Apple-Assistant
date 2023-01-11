@@ -1,10 +1,12 @@
 import mimetypes
 import variables
+import os
 from flask import Flask, Response, request
 from twilio.twiml.messaging_response import MessagingResponse
 from construct_message import get_body
 from twilio_balance import get_balance
 from openai_image import get_description, generate_image, send_image
+
 
 application = Flask(__name__)
 
@@ -32,7 +34,7 @@ def send_sms():
     elif (body[0:9] == "picture: "):
       description = get_description(body)
       image_url = generate_image(description)
-      send_image(variables.number_to, image_url)
+      send_image(os.environ['numberTo'], image_url)
     elif (body == "balance"):
       resp.message(get_balance())
     else:

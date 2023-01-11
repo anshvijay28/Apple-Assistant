@@ -1,7 +1,8 @@
 import openai
 import variables
+import os 
 
-openai.api_key = variables.openai_api_key
+openai.api_key = os.environ['openaiApiKey']
 
 def get_quote():
   response = openai.Completion.create(
@@ -17,11 +18,6 @@ def get_quote():
 
   text = response['choices'][0]['text']
   return text
-
-
-print(type(variables.twilio_account_sid))
-print(type(variables.twilio_auth_token))
-
 
 
 

@@ -1,8 +1,9 @@
 from twilio.rest import Client
 import variables
+import os
 
-account_sid = variables.twilio_account_sid 
-auth_token = variables.twilio_auth_token
+account_sid = os.environ['twilioAccountSid'] 
+auth_token = os.environ['twilioAuthToken']
 
 client = Client(account_sid, auth_token)
 

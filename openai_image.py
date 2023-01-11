@@ -1,5 +1,6 @@
 from twilio.rest import Client
 import openai
+import os
 import variables
 
 def get_description(message):
@@ -7,7 +8,7 @@ def get_description(message):
     l2 = l1[1:len(l1)]
     return "".join(l2)
 
-openai.api_key = variables.openai_api_key
+openai.api_key = os.environ['openaiApiKey']
 
 def generate_image(description):
     response = openai.Image.create(
@@ -18,13 +19,13 @@ def generate_image(description):
     image_url = response['data'][0]['url']
     return image_url
 
-account_sid = variables.twilio_account_sid
-auth_token = variables.twilio_auth_token
+account_sid = os.environ['twilioAccountSid']
+auth_token = os.environ['twilioAuthToken']
 client = Client(account_sid, auth_token)
 
 def send_image(receiver, url):
     message = client.messages.create(
-                                  from_= variables.number_from,
+                                  from_= os.environ['numberFrom'],
                                   media_url=[url],
                                   to=receiver
                                 )
