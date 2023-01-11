@@ -3,8 +3,7 @@ import variables
 from flask import Flask, Response, request
 from twilio.twiml.messaging_response import MessagingResponse
 from construct_message import get_body
-# from twilio_balance import get_balance
-from getting_quote import get_quote
+from twilio_balance import get_balance
 from openai_image import get_description, generate_image, send_image
 
 application = Flask(__name__)

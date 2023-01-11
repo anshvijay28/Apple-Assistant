@@ -19,6 +19,9 @@ def get_quote():
   return text
 
 
+print(type(variables.twilio_account_sid))
+print(type(variables.twilio_auth_token))
+
 
 
 
