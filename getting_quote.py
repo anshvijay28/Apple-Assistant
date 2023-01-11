@@ -18,6 +18,3 @@ def get_quote():
 
   text = response['choices'][0]['text']
   return text
-
-
-

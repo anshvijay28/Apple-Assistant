@@ -6,6 +6,7 @@ from twilio.twiml.messaging_response import MessagingResponse
 from construct_message import get_body
 from twilio_balance import get_balance
 from openai_image import get_description, generate_image, send_image
+from getting_quote import get_quote
 
 
 application = Flask(__name__)
