@@ -5,8 +5,7 @@ from twilio.twiml.messaging_response import MessagingResponse
 from construct_message import get_body
 from twilio_balance import get_balance
 from openai_image import get_description, generate_image, send_image
-from getting_quote import get_quote
-
+from chat_gpt import get_quote
 
 application = Flask(__name__)
 
@@ -27,11 +26,11 @@ def send_sms():
     # Logic of which message to respond with 
     if (body == 'hi'):
       resp.message("Hey there!")
-    elif (body == "quote"):
-      resp.message(get_quote())
+    elif (body[0:5] == "gbt: "):
+      resp.message(get_gpt_response(body[5:]))
     elif (body == "weather"):
       resp.message(get_body())
-    elif (body[0:9] == "picture: "):
+    elif (body[:9] == "picture: "):
       description = get_description(body)
       image_url = generate_image(description)
       send_image(os.environ['numberTo'], image_url)
