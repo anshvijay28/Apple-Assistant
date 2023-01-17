@@ -20,6 +20,7 @@ def generate_image(description):
 
 account_sid = os.environ['twilioAccountSid']
 auth_token = os.environ['twilioAuthToken']
+
 client = Client(account_sid, auth_token)
 
 def send_image(receiver, url):
@@ -28,6 +29,5 @@ def send_image(receiver, url):
                                   media_url=[url],
                                   to=receiver
                                 )
-
 
     

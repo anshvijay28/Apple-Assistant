@@ -26,7 +26,7 @@ def send_sms():
     # Logic of which message to respond with 
     if (body == 'hi'):
       resp.message("Hey there!")
-    elif (body[:5] == "gbt: "):
+    elif (body[:5] == "gpt: "): 
       resp.message(get_gpt_response(body[5:]))
     elif (body == "weather"):
       resp.message(get_body())
