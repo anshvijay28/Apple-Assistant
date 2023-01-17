@@ -17,3 +17,5 @@ def get_gpt_response(user_response):
 
   text = response['choices'][0]['text']
   return text
+
+
