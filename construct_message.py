@@ -5,8 +5,9 @@ def get_subject():
 	return subject
 def get_body():
 	body = '''
-	It currently feels like {feels_like}°F.
-	The actual temperature is {actual}°F.
+
+	It currently feels {feels_like}°F.
+	The real temperature is {actual}°F.
 	The low today will be {low}°F.
 	The high today will be {high}°F.
 	The sun will set at {sunset}.
@@ -14,5 +15,3 @@ def get_body():
 		low = str(temperature.low), high = str(temperature.high), 
 		sunset = str(temperature.time_of_sunset))
 	return body
-
-print(get_body())
