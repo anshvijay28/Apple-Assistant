@@ -17,13 +17,11 @@ def fahrenheit(kelvin):
 	return math.ceil(f * 100) / 100
 
 def sunset(time):
-	time = str(time)
-	l1 = time.split()
-	l2 = l1[1].split(":")
-	hour = int(l2[0])
-	hour -= 15
-	hour = str(hour)
-	return hour + ':' + l2[1] + ':' + l2[2] + 'PM'
+	time = str(time).split(" ")[1]
+	hours = time.split(":")[0]
+	minutes = time.split(":")[1]
+	hours = str(int(hours) - 12)
+	return hours + ':' + minutes + 'PM'
 
 data = response.json()
 
@@ -36,6 +34,7 @@ high = fahrenheit(data['main']['temp_max'])
 sunset_unix = data['sys']['sunset']
 sunset_datetime = datetime.datetime.fromtimestamp(sunset_unix)
 time_of_sunset = sunset(sunset_datetime)
+
 
 
 

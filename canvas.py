@@ -4,8 +4,10 @@ import os
 API_URL = "https://gatech.instructure.com/"
 API_KEY = os.environ['canvasAPIKEY']
 
+
 canvas = Canvas(API_URL, API_KEY)
 ansh = canvas.get_user(os.environ['canvasUserNumber'])
+
 all_courses = ansh.get_courses(enrollment_status='active')
 
 CS_2110 = all_courses[1]
@@ -63,8 +65,6 @@ def due(utc):
     date_due = "(" + month + "/" + day + ")"
     time_due = hour + ":" + minute + " " + am_pm
 
-    
-
     return (date_due, time_due)
 
 def print_all_assignments():
@@ -86,8 +86,6 @@ def print_all_assignments():
         print()
 
 assignment = courses[1].get_assignments()[4]
-
-
 
 print(ansh.get_missing_submissions().__sizeof__())
 
