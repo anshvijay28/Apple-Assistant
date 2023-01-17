@@ -1,7 +1,6 @@
 from twilio.rest import Client
 import openai
 import os
-import variables
 
 def get_description(message):
     l1 = message.split()

@@ -1,5 +1,4 @@
 import openai
-import variables
 import os 
 
 openai.api_key = os.environ['openaiApiKey']

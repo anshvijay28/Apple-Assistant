@@ -16,3 +16,4 @@ Werkzeug==2.2.2
 zipp==3.11.0
 openai==0.25.0
 python-dotenv==0.21.0
+canvasapi==3.0.0

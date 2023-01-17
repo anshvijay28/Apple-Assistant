@@ -1,5 +1,4 @@
 from twilio.rest import Client
-import variables
 import os
 
 account_sid = os.environ['twilioAccountSid'] 

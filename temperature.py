@@ -3,7 +3,6 @@ import json
 import math
 import datetime 
 from datetime import date
-import variables
 import os 
 
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"

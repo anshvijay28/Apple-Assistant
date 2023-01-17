@@ -1,5 +1,4 @@
 import mimetypes
-import variables
 import os
 from flask import Flask, Response, request
 from twilio.twiml.messaging_response import MessagingResponse
@@ -40,8 +39,6 @@ def send_sms():
       resp.message(get_balance())
     else:
       resp.message("Please type a valid command.")
- 
-    
 
     return Response(str(resp), mimetype="application/xml")
 
