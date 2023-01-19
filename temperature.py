@@ -5,7 +5,7 @@ import datetime
 from datetime import date
 import os 
 
-BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
+BASE_URL = "http://api.openweathermap.org/data/2.5/weather?"
 API_KEY = os.environ['openweathermapApiKey']
 CITY = "Atlanta"
 
@@ -26,10 +26,10 @@ def sunset(time):
 data = response.json()
 
 current_date = date.today()
-# feels_like = fahrenheit(data['main']['feels_like'])
-# actual = fahrenheit(data['main']['temp'])
-# low = fahrenheit(data['main']['temp_min'])
-# high = fahrenheit(data['main']['temp_max'])
+feels_like = fahrenheit(data['main']['feels_like'])
+actual = fahrenheit(data['main']['temp'])
+low = fahrenheit(data['main']['temp_min'])
+high = fahrenheit(data['main']['temp_max'])
 
 sunset_unix = data['sys']['sunset']
 sunset_datetime = datetime.datetime.fromtimestamp(sunset_unix)
