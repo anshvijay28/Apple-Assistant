@@ -25,8 +25,19 @@ The generate new Token Button will look like this
  
 ![Generate Token Picture](/pictures/Generate_Token.png?raw=true "Generate Token")  
 ### OpenAi API Key  
-Go to [link](https://openai.com/api/) and create an account. Once you have made an account go to the upper right hand corner and click "View API Keys". 
+Go to this [link](https://openai.com/api/) and create an account. Once you have made an account, go to the upper right hand corner and click "View API Keys". 
 
 ![View API Keys](/pictures/OpenAI_View_Keys.png?raw=true "View Keys")  
 
-Once clicked you simply press "Create new secret key". Make sure to note it down some place because once you click off the pop up you will no longer have access to the key and will have to make a new one. 
+Once clicked you simply press "Create new secret key". Make sure to note it down some place because once you click off the pop up you will no longer have access to the key and will have to make a new one.  
+
+### Openweathermap API Key  
+Go to this [link](https://openweathermap.org/api) and create an account. Once you have made an account, again go to the upper right hand corner and click "My API keys".  
+
+![My API Keys](/pictures/Manage_openweathermap_key.png?raw=true "My Keys")  
+
+Then give your key a name (again the name of the key doesn't effect its functionality) and press generate.  
+
+![Generate Openweathermapkey](/pictures/Generate_openweathermap_key.png?raw=true "Generate Key")  
+
+
