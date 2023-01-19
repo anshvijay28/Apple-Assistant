@@ -40,4 +40,7 @@ Then give your key a name (again the name of the key doesn't effect its function
 
 ![Generate Openweathermapkey](/pictures/Generate_openweathermap_key.png?raw=true "Generate Key")  
 
+## Hosting the code  
+This program is based upon a flask application. As such, it must be hosted somewhere either locally or externally. I recommend hosting your code externally as you wouldn't have to burdern your device with running the application 24/7. To host on AWS (as I did) watch this tutorial by Caleb Curry!  
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4tDjVFbi31o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
