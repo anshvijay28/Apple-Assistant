@@ -2,7 +2,7 @@ import mimetypes
 import os
 from flask import Flask, Response, request
 from twilio.twiml.messaging_response import MessagingResponse
-# from construct_message import get_body
+from construct_message import get_body
 from twilio_balance import get_balance
 from openai_image import get_description, generate_image, send_image
 from chat_gpt import get_gpt_response
