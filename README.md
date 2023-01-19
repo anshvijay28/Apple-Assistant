@@ -43,4 +43,15 @@ Then give your key a name (again the name of the key doesn't effect its function
 ## Hosting the code  
 This program is based upon a flask application. As such, it must be hosted somewhere either locally or externally. I recommend hosting your code externally as you wouldn't have to burdern your device with running the application 24/7. To host on AWS (as I did) watch this tutorial by Caleb Curry! 
 
-[![Apple-Assistant](https://img.youtube.com/vi/4tDjVFbi31o/0/jpg)](https://www.youtube.com/watch?v=4tDjVFbi31o)
+[![Apple-Assistant](https://img.youtube.com/vi/4tDjVFbi31o/0/jpg)](https://www.youtube.com/watch?v=4tDjVFbi31o)  
+
+If you want to host your code locally then follow this [tutorial](https://www.twilio.com/docs/usage/tutorials/how-to-set-up-your-python-and-flask-development-environment#create-a-simple-flask-application) by the Twilio team about Ngrok!  
+
+Once you are through the process of hosting your code then you will be left with a url. To finally connect your code to Twilio head over to this [Twilio's Website](https://console.twilio.com/) and click Phone Numbers > Manage > Active Numbers and click on your number in the console (it should be in blue text). Then scroll all the way down and paste your link where I have in this picture.  
+
+![Twilio Webhook](/pictures/Twilio_Webhook.png?raw=true "Configure Webhook")
+  
+Make sure
+1. The end of your url is appended with '/sms'
+2. You are configuring the "A message comes in" webhook
+3. The webhook is set to HTTP POST 
