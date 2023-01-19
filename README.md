@@ -42,5 +42,5 @@ Then give your key a name (again the name of the key doesn't effect its function
 
 ## Hosting the code  
 This program is based upon a flask application. As such, it must be hosted somewhere either locally or externally. I recommend hosting your code externally as you wouldn't have to burdern your device with running the application 24/7. To host on AWS (as I did) watch this tutorial by Caleb Curry! 
- 
-[![Apple-Assistant](https://img.youtube.com/vi/4tDjVFbi31o&ab/0/jpg)](https://www.youtube.com/watch?v=4tDjVFbi31o&ab)
+
+[![Apple-Assistant](https://img.youtube.com/vi/4tDjVFbi31o/0/jpg)](https://www.youtube.com/watch?v=4tDjVFbi31o)
