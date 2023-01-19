@@ -14,6 +14,11 @@ openaiApiKey = XXXXXXXXXXXXXXX
 twilioAccountSid = XXXXXXXXXXXXXXX
 twilioAuthToken = XXXXXXXXXXXXXXX
 ```
+### Twilio Account
+This is what powers the whole application. Without Twilio there would be no phone number to text or SMS messages to send. To make an account go [here](https://www.twilio.com/). Once completed you can go to your console and you will see your Account SID, Authentication Token, and Twilio Phone Number.  
+
+![Twilio Account Info](/pictures/Twilio_Account_Information.png?raw=true "Account Credentials")
+
 ### Canvas API Key
 Go to XXXXX.instructure.com > Account > Settings > Generate New Token  
 
