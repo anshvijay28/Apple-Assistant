@@ -77,3 +77,10 @@ Make sure
 1. The end of your url is appended with '/sms'
 2. You are configuring the "A message comes in" webhook
 3. The webhook is set to HTTP POST 
+
+## Commands  
+- "hi" --> "Hey there!"
+- "gpt: "  --> Whatever is put after the colon will be put through ChatGPT using the OpenAI's API and you will get the appropriate response 
+- "weather" --> Will output the current temperature, high and low of the day, and what time the sun will set 
+- "picture: " --> What is put after the colon will be put through DALLE 2 using OpenAI's API and you will get the appropriate response 
+- "balance" --> If using Twilio's free account it will output how much money is left in the account 
