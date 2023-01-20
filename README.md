@@ -70,7 +70,7 @@ If you want to host your code locally then follow this [tutorial](https://www.tw
 Once you are through the process of hosting your code then you will be left with a url. To finally connect your code to Twilio head over to this [Twilio's Website](https://console.twilio.com/) and click Phone Numbers > Manage > Active Numbers and click on your number in the console (it should be in blue text). Then scroll all the way down and paste your link where I have in this picture.  
 
 <p align = "center">
-    <img width = "auto" height = "100" src = "https://github.com/anshvijay28/Apple-Assistant/blob/main/pictures/Twilio_Webhook.png">
+    <img width = "auto" height = "75" src = "https://github.com/anshvijay28/Apple-Assistant/blob/main/pictures/Twilio_Webhook.png">
 </p>
   
 Make sure
