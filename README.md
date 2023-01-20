@@ -17,14 +17,18 @@ twilioAuthToken = XXXXXXXXXXXXXXX
 ### Twilio Account
 This is what powers the whole application. Without Twilio there would be no phone number to text or SMS messages to send. To make an account go [here](https://www.twilio.com/). Once completed you can go to your console and you will see your Account SID, Authentication Token, and Twilio Phone Number.  
 
-![Twilio Account Info](/pictures/Twilio_Account_Information.png?raw=true "Account Credentials")
+<p align = "center">
+    <img width = "350" height = "auto" src = "https://github.com/anshvijay28/Apple-Assistant/blob/main/pictures/Twilio_Account_Information.png">
+</p>
 
 ### Canvas API Key
 Go to XXXXX.instructure.com > Account > Settings > Generate New Token  
 
 The generate new Token Button will look like this  
 
-![New Canvas Token Picture](/pictures/New_Access_Token.png?raw=true "New Access Token")  
+<p align = "center">
+    <img width = "350" height = "auto" src = "https://github.com/anshvijay28/Apple-Assistant/blob/main/pictures/New_Access_Token.png">
+</p>
   
  After you click New Access Token you will be prompted to create an expiration date and specify the purpose. Specifying the purpose has no effect on the program it is just for organizational purposes if you have multiple access tokens. For the expiration date you can create one at your discretion, I did not create an expiration date for less maintence, but if you are concerned for the security of the program go ahead and create one.
  
@@ -37,18 +41,24 @@ The generate new Token Button will look like this
 ### OpenAi API Key  
 Go to this [link](https://openai.com/api/) and create an account. Once you have made an account, go to the upper right hand corner and click "View API Keys". 
 
-![View API Keys](/pictures/OpenAI_View_Keys.png?raw=true "View Keys")  
+<p align = "center">
+    <img width = "350" height = "auto" src = "https://github.com/anshvijay28/Apple-Assistant/blob/main/pictures/OpenAI_View_Keys.png">
+</p>
 
 Once clicked you simply press "Create new secret key". Make sure to note it down some place because once you click off the pop up you will no longer have access to the key and will have to make a new one.  
 
 ### Openweathermap API Key  
 Go to this [link](https://openweathermap.org/api) and create an account. Once you have made an account, again go to the upper right hand corner and click "My API keys".  
 
-![My API Keys](/pictures/Manage_openweathermap_key.png?raw=true "My Keys")  
+<p align = "center">
+    <img width = "350" height = "auto" src = "https://github.com/anshvijay28/Apple-Assistant/blob/main/pictures/Manage_openweathermap_key.png">
+</p>
 
 Then give your key a name (again the name of the key doesn't effect its functionality) and press generate.  
 
-![Generate Openweathermapkey](/pictures/Generate_openweathermap_key.png?raw=true "Generate Key")  
+<p align = "center">
+    <img width = "350" height = "auto" src = "https://github.com/anshvijay28/Apple-Assistant/blob/main/pictures/Generate_openweathermap_key.png">
+</p>
 
 ## Hosting the code  
 This program is based upon a flask application. As such, it must be hosted somewhere either locally or externally. I recommend hosting your code externally as you wouldn't have to burdern your device with running the application 24/7. To host on AWS (as I did) watch this tutorial by Caleb Curry! 
@@ -59,7 +69,9 @@ If you want to host your code locally then follow this [tutorial](https://www.tw
 
 Once you are through the process of hosting your code then you will be left with a url. To finally connect your code to Twilio head over to this [Twilio's Website](https://console.twilio.com/) and click Phone Numbers > Manage > Active Numbers and click on your number in the console (it should be in blue text). Then scroll all the way down and paste your link where I have in this picture.  
 
-![Twilio Webhook](/pictures/Twilio_Webhook.png?raw=true "Configure Webhook")
+<p align = "center">
+    <img width = "350" height = "auto" src = "https://github.com/anshvijay28/Apple-Assistant/blob/main/pictures/Twilio_Webhook.png">
+</p>
   
 Make sure
 1. The end of your url is appended with '/sms'
