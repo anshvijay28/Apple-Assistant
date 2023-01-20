@@ -18,7 +18,7 @@ twilioAuthToken = XXXXXXXXXXXXXXX
 This is what powers the whole application. Without Twilio there would be no phone number to text or SMS messages to send. To make an account go [here](https://www.twilio.com/). Once completed you can go to your console and you will see your Account SID, Authentication Token, and Twilio Phone Number.  
 
 <p align = "center">
-    <img width = "350" height = "auto" src = "https://github.com/anshvijay28/Apple-Assistant/blob/main/pictures/Twilio_Account_Information.png">
+    <img width = "auto" height = "400" src = "https://github.com/anshvijay28/Apple-Assistant/blob/main/pictures/Twilio_Account_Information.png">
 </p>
 
 ### Canvas API Key
@@ -27,7 +27,7 @@ Go to XXXXX.instructure.com > Account > Settings > Generate New Token
 The generate new Token Button will look like this  
 
 <p align = "center">
-    <img width = "350" height = "auto" src = "https://github.com/anshvijay28/Apple-Assistant/blob/main/pictures/New_Access_Token.png">
+    <img width = "auto" height = "300" src = "https://github.com/anshvijay28/Apple-Assistant/blob/main/pictures/New_Access_Token.png">
 </p>
   
  After you click New Access Token you will be prompted to create an expiration date and specify the purpose. Specifying the purpose has no effect on the program it is just for organizational purposes if you have multiple access tokens. For the expiration date you can create one at your discretion, I did not create an expiration date for less maintence, but if you are concerned for the security of the program go ahead and create one.
@@ -70,7 +70,7 @@ If you want to host your code locally then follow this [tutorial](https://www.tw
 Once you are through the process of hosting your code then you will be left with a url. To finally connect your code to Twilio head over to this [Twilio's Website](https://console.twilio.com/) and click Phone Numbers > Manage > Active Numbers and click on your number in the console (it should be in blue text). Then scroll all the way down and paste your link where I have in this picture.  
 
 <p align = "center">
-    <img width = "350" height = "auto" src = "https://github.com/anshvijay28/Apple-Assistant/blob/main/pictures/Twilio_Webhook.png">
+    <img width = "auto" height = "250" src = "https://github.com/anshvijay28/Apple-Assistant/blob/main/pictures/Twilio_Webhook.png">
 </p>
   
 Make sure
